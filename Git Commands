@@ -29,3 +29,15 @@ This file has helpful commands for the beginners.
 ** changing your last commit without commiting again, it will let you add the staged files to cmmit 
 > git commit --amend -m 'Changed return type of my_strlen to size_t'
 > git commit --amend --no-edit //no edit to the log messgae
+
+*** The stash operation takes your modified tracked files,stages changes, and saves them on a stack of
+   unfinished changes that you can reapply at any time.
+> git stash
+> git stash list 
+> git stash pop
+
+** '-a' flag, that makes git commit automatically detect the modified files.
+> git commit -a -m 'Added Makefile and renamed strings"
+
+** check out to undo the last operation 
+> git checkout string_operations.c
