@@ -1,0 +1,31 @@
+This file has helpful commands for the beginners. 
+
+**** Add new Group 
+> groupadd dev
+
+*** set user name of every repo
+> git config --global user.name "Ayesha"
+
+*** set user name of working directory 
+> git config user.name "Ayesha"
+
+***confirm user name 
+> git config --global user.name
+> git config user.name 
+
+**** Add user 
+>useradd -G dev -d /home/gituser -m -s /bin/bash gituser
+
+*** Change password
+> passwd gituser
+
+*** Bare repository - a repository without a working directory. Bare repository must be named as .git
+** to create bare repository 
+>git --bare init
+
+> git show cbe1249b140dad24b2c35b15cc7e26a6f02d2277
+> git diff
+
+** changing your last commit without commiting again, it will let you add the staged files to cmmit 
+> git commit --amend -m 'Changed return type of my_strlen to size_t'
+> git commit --amend --no-edit //no edit to the log messgae
