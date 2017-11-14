@@ -1,0 +1,10 @@
+Local Repository : A workng copy of the whole repository in the developers system, where you can edit/remove/modify/create files 
+                   and commit to master directory. 
+Working Directory : A working Directory is the directory where files are checked out. In Git users modify their files and 
+                    add them to the staging area. What Git looks is the file sin the staging area, not all the files that are modified. 
+                    Basic Workflow of Git.
+                    1. modify the files. 
+                    2. add them to the staging area : Git add <file-name>
+                    3. Modify whatever you want to modify fromt he staging are and add that to staging area.
+                    4. Once the modification is done, add it to the repository. Once you add it to the repo you can't modify them 
+                    further as they are immutable. Command for that : git commit –m “Messgae for the commit”
